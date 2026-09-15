@@ -1,10 +1,10 @@
-# 🌦️ Weather Data ETL Pipeline with Apache Airflow
+#  Weather Data ETL Pipeline with Apache Airflow
 
 This project is a daily **ETL (Extract, Transform, Load)** pipeline built using **Apache Airflow**. It fetches real-time weather data for **Nakuru**, Kenya from the **OpenWeatherMap API**, processes the data, and stores it in a **PostgreSQL** database for analytics and reporting.
 
 ---
 
-## 🚀 Project Overview
+##  Project Overview
 
 - **Extract**: Retrieves current weather data from the OpenWeatherMap API.
 - **Transform**: Cleans and structures the weather data using `pandas`.
@@ -14,7 +14,7 @@ This pipeline runs **daily** and is orchestrated by Apache Airflow.
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 | Tool/Library        | Purpose                                 |
 |---------------------|-----------------------------------------|
@@ -28,7 +28,7 @@ This pipeline runs **daily** and is orchestrated by Apache Airflow.
 
 ---
 
-## 📊 Data Flow
+##  Data Flow
 
 ### DAG Task Pipeline:
 
@@ -48,7 +48,7 @@ Copy code
 
 ---
 
-## 📋 Extracted & Stored Fields
+##  Extracted & Stored Fields
 
 | Field           | Description                        |
 |----------------|------------------------------------|
@@ -64,7 +64,7 @@ Copy code
 
 ---
 
-## 🗃️ PostgreSQL Setup
+##  PostgreSQL Setup
 
 Ensure PostgreSQL is running locally with the following configuration:
 
@@ -76,7 +76,7 @@ Password: 12345
 Database: postgres
 The data is appended to a table called weather_data.
 
-🧪 Example Record
+ Example Record
 json
 Copy code
 {
@@ -90,7 +90,7 @@ Copy code
   "Visibility": 10000,
   "Cloudiness": 0
 }
-🧰 Getting Started
+ Getting Started
 1. Clone the repository
 bash
 Copy code
@@ -117,7 +117,7 @@ Place your DAG script (e.g., weather_etl_dag.py) into the Airflow dags/ director
 bash
 Copy code
 cp weather_etl_dag.py ~/airflow/dags/
-🔐 API Key
+ API Key
 The project uses an API key from OpenWeatherMap:
 
 Get your API key here
