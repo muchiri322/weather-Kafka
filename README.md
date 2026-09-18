@@ -198,11 +198,7 @@ PostgreSQL
 
 Future improvements can include Kafka producers and consumers, historical weather storage, streaming processing, data quality checks, Grafana monitoring, and Docker deployment.
 
-## Security
 
-Never commit credentials to GitHub. Use environment variables or a secrets-management solution for API keys, database passwords, connection strings, and other sensitive configuration.
-
-If credentials were previously exposed in source code, rotate them before publishing the project.
 
 ## Author
 
